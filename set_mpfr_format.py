@@ -6,6 +6,7 @@ import gmpy2 # GMPy2
 # Title and header
 #st.title('Test program for gmpy2 and Sreamlit')
 st.header('Test program for gmpy2 and Sreamlit')
+st.write('Last Update: 2025-11-20(Thu) by T.Kouya')
 
 # set context
 ctx = gmpy2.get_context()
