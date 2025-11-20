@@ -3,10 +3,13 @@ import streamlit as st # Streamlit
 import numpy as np # NumPy
 import gmpy2 # GMPy2
 
+# Title and header
+#st.title('Test program for gmpy2 and Sreamlit')
+st.header('Test program for gmpy2 and Sreamlit')
+
 # set context
 ctx = gmpy2.get_context()
 
-st.write('Test program for gmpy2 and Sreamlit')
 #st.write('ctx = ', ctx)
 user_prec = st.number_input('Prec in bit: ', value=53)
 if user_prec >= 0:
@@ -18,3 +21,6 @@ if user_prec >= 0:
     st.write('Pi = ', gmpy2.const_pi())
     #st.write('Pi in bit = ', gmpy2.to_binary(gmpy2.const_pi()))
     st.write('sqrt(2) + sqrt(3) = ', a + b)
+
+# footer
+st.html('<hr><address>Tomonori Kouya (c) 2025</address>')
